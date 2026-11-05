@@ -1,0 +1,3 @@
+stage,rows,columns,missing_values,duplicate_rows,duplicate_players,unnamed_index_columns,text_cells_with_extra_whitespace,blank_text_cells
+before_cleaning,105,15,0,0,0,0,0,0
+after_cleaning,105,25,0,0,0,0,0,0

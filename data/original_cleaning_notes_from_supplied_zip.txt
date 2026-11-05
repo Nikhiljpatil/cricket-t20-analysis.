@@ -1,0 +1,16 @@
+CRICKET DATASET CLEANING NOTES
+
+Cleaning operations:
+1. Removed obvious exported index columns (for example, 'Unnamed: 0').
+2. Removed columns containing only missing values (for example, 'Unnamed: 2').
+3. Trimmed leading/trailing whitespace in column names and text fields.
+4. Converted blank text cells to missing values.
+5. Removed exact duplicate rows, if any were present.
+6. Converted object columns to numeric only when all non-missing values were safely numeric.
+7. Preserved meaningful missing values rather than filling them automatically. For example, a missing series margin may mean the source did not provide one.
+8. Preserved cricket notation such as '94*', '167*', '5/20', and '16/220' because these carry domain meaning.
+
+Important:
+- This is conservative cleaning. It removes clear formatting artifacts without inventing values.
+- Review the cleaning_summary.csv before analysis.
+- For a project focused on T20 batting, use twb.csv as the primary cleaned dataset.
